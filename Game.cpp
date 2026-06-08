@@ -5,8 +5,29 @@
 #include <iostream>
 
 void Game::startGame() {
-    player.health = 100;
+    player.health = 50;
     player.currentLocation = 1;
+
+
+    startRoom.id = 1;
+    startRoom.name = "Forest Entrance";
+    startRoom.hasChest = false;
+
+    chestRoom1.id = 2;
+    chestRoom1.name = "Hunter Hut";
+    chestRoom1.hasChest = true;
+
+    puzzleRoom.id = 3;
+    puzzleRoom.name = "Dark Cave";
+    puzzleRoom.hasChest = false;
+
+    chestRoom2.id = 4;
+    chestRoom2.name = "Ancient Temple";
+    chestRoom2.hasChest = true;
+
+    exitRoom.id = 5;
+    exitRoom.name = "Treasure Gate";
+    exitRoom.hasChest = false;
 
     
 
