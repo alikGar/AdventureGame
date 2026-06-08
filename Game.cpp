@@ -61,14 +61,12 @@ void Game::startGame() {
         std::cout << "Location: " << player.currentLocation << std::endl;
         chestRoom1.showmap();
 
-        std::cout << "You found a wooden chest!" << std::endl;
-        std::cout << "Forest Herb added to inventory!" << std::endl;
+       std::cout << "You found a wooden chest!" << std::endl;
 
-        player.inventory.push_back(smallPotion);
+player.health += smallPotion.healthLevel;
 
-        std::cout << "Potions in inventory: "
-                  << player.inventory.size()
-                  << std::endl;
+std::cout << "You used Forest Herb!" << std::endl;
+std::cout << "Health: " << player.health << std::endl;
     }
     else {
         endGame();
@@ -93,7 +91,7 @@ void Game::startGame() {
     Puzzle puzzle2;
     puzzle2.id = 2;
     puzzle2.name = "Weight Puzzle";
-    puzzle2.question = "What is heavier: 1 kilogram of iron or 1 kilogram of cotton? Answer: equal";
+    puzzle2.question = "What is heavier: 1 kilogram of iron or 1 kilogram of cotton? ";
     puzzle2.answer = "equal";
     puzzle2.damage = 10;
 
@@ -127,14 +125,12 @@ void Game::startGame() {
         player.takeDamage(puzzle4.damage);
     }
 
-    std::cout << "You found an ancient chest!" << std::endl;
-    std::cout << "Ancient Elixir added to inventory!" << std::endl;
+std::cout << "You found an ancient chest!" << std::endl;
 
-    player.inventory.push_back(bigPotion);
+player.health += bigPotion.healthLevel;
 
-    std::cout << "Potions in inventory: "
-              << player.inventory.size()
-              << std::endl;
+std::cout << "You used Ancient Elixir!" << std::endl;
+std::cout << "Health: " << player.health << std::endl;
 
     player.usePotion();
 

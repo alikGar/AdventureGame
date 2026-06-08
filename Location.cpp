@@ -1,3 +1,5 @@
+#include "Location.h"
+#include <iostream>
 void Location::showmap()
 {
     switch(id)

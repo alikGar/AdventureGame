@@ -1,12 +1,12 @@
 CXX = g++
-CXXFLAGS = -Wall
+CXXFLAGS = -Wall -std=c++11
 
-TARGET = questgamr
+TARGET = AdventureGames
 
-SRC = main.cpp Game.cpp Character.cpp Chest.cpp Location.cpp Puzzle.cpp Potion.cpp Savesystem.cpp
+SRCS = Character.cpp Chest.cpp Game.cpp Location.cpp Potion.cpp Puzzle.cpp Savesystem.cpp main.cpp
 
-$(TARGET): $(SRC)
-	$(CXX) $(CXXFLAGS) $(SRC) -o $(TARGET)
+all:
+	$(CXX) $(CXXFLAGS) $(SRCS) -o $(TARGET)
 
 clean:
 	rm -f $(TARGET)
