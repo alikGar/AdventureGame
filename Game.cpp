@@ -29,7 +29,20 @@ void Game::startGame() {
     exitRoom.name = "Treasure Gate";
     exitRoom.hasChest = false;
 
-    
+    Potion smallPotion;
+    smallPotion.id = 1;
+    smallPotion.name = "Forest Herb";
+    smallPotion.healthLevel = 20;
+
+    Potion bigPotion;
+    bigPotion.id = 2;
+    bigPotion.name = "Ancient Elixir";
+    bigPotion.healthLevel = 50;
+
+    Potion fakePotion;
+    fakePotion.id = 3;
+    fakePotion.name = "Empty Bottle";
+    fakePotion.healthLevel = 0;
 
     
     std::cout << "Health: " << player.health << std::endl;
