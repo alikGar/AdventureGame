@@ -55,6 +55,51 @@ AdventureGames ? это консольная приключенческая игра на языке C++, в которой игр
 * Ancient Temple ? древний храм с наградами.
 * Treasure Gate ? финальная локация игры.
 
+## Загадки игры
+
+Во время прохождения игры игроку необходимо решить несколько загадок. Неправильный ответ уменьшает количество здоровья персонажа.
+
+### Загадка 1
+
+Вопрос:
+
+You have 3 apples. You take 2 apples. How many apples do you have?
+
+Правильный ответ:
+
+```text
+2
+```
+### Загадка 2
+
+Вопрос:
+
+What is heavier: 1 kilogram of iron or 1 kilogram of cotton?
+
+Правильный ответ:
+
+```text
+equal
+```
+### Загадка 3
+
+Вопрос:
+If 2 cats catch 2 mice in 2 minutes, how many cats are needed to catch 100 mice in 100 minutes?
+
+Правильный ответ:
+```text
+2
+```
+### Загадка 4
+
+Вопрос:
+What can be broken without touching it?
+
+Правильный ответ:
+
+```text
+promise
+```
 ## Используемые технологии
 
 * Язык программирования: C++
@@ -80,4 +125,4 @@ make
 
 ## Автор
 
-Алик Гарифуллин
+Алик Гарифуллин и Вадим Четин 
