@@ -201,6 +201,11 @@ promise
 ```bash
 make
 ```
+Если нет команды make:
+
+```bash
+g++ -Wall -std=c++11 Character.cpp Chest.cpp Game.cpp Location.cpp Potion.cpp Puzzle.cpp Savesystem.cpp main.cpp -o AdventureGames.exe ./AdventureGames.exe
+```
 
 Для запуска игры:
 
